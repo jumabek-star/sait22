@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Умму Мухаммад — 4 жылдык окуу жана Куран жаттатуу институту</title>
+<meta name="description" content="Умму Мухаммад — 4 жылдык Куран жаттатуу жана кошумча илимдерди үйрөтүүчү билим берүү институту. Онлайн кабыл алуу.">
+<meta name="keywords" content="Куран жаттоо, хифз, тажвид, Умму Мухаммад, институт, кабыл алуу, Кыргызстан">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ========== 1. ӨЗГӨРМӨЛӨР (түстөрдү ушул жерден өзгөртүңүз) ========== */
+:root{
+  --dark:#0d3b2c; --emerald:#13805d; --gold:#c9a24b; --ivory:#fbfaf5; --mint:#eaf3ee; --text:#213a31;
+  --shadow:0 6px 20px rgba(13,59,44,.10);
+}
+/* ========== 2. НЕГИЗГИ СТИЛДЕР ========== */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:'Nunito Sans',sans-serif;color:var(--text);background:var(--ivory);line-height:1.65}
+h1,h2,h3,.logo b{font-family:'Noto Serif',serif;line-height:1.25;color:var(--dark)}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.container{width:min(1140px,92%);margin:auto}
+section{padding:72px 0}
+.title{font-size:clamp(1.6rem,4vw,2.3rem);text-align:center;margin-bottom:12px}
+.title::after{content:"";display:block;width:56px;height:3px;background:var(--gold);margin:14px auto 0;border-radius:2px}
+.sub{text-align:center;max-width:640px;margin:0 auto 40px}
+.btn{display:inline-block;padding:13px 26px;border-radius:50px;border:2px solid var(--gold);font-weight:700;cursor:pointer;font-size:1rem;font-family:inherit;transition:.25s}
+.btn-gold{background:var(--gold);color:var(--dark)}
+.btn-gold:hover{background:#dbb85f;transform:translateY(-2px)}
+.btn-line{color:#fff}
+.btn-line:hover{background:rgba(255,255,255,.12)}
+.grid{display:grid;gap:22px}
+.card{background:#fff;border-radius:18px;padding:26px;box-shadow:var(--shadow);transition:.3s}
+.card:hover{transform:translateY(-5px)}
+
+/* ========== 3. HEADER ========== */
+header{position:fixed;top:0;left:0;right:0;z-index:50;transition:.3s;background:transparent}
+header.scrolled{background:var(--dark);box-shadow:0 2px 14px rgba(0,0,0,.25)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{color:#fff;line-height:1.2}
+.logo b{display:block;color:var(--gold);font-size:1.15rem}
+.logo small{font-size:.72rem;opacity:.85}
+nav ul{display:flex;gap:20px;align-items:center}
+nav a{color:#fff;font-size:.93rem;padding:4px 0;border-bottom:2px solid transparent}
+nav a.active,nav a:hover{border-color:var(--gold)}
+nav .btn{padding:9px 18px;font-size:.88rem;border-bottom:2px solid var(--gold)}
+.burger{display:none;background:none;border:0;cursor:pointer;width:42px;height:42px}
+.burger span{display:block;height:3px;background:#fff;margin:6px 8px;border-radius:2px;transition:.3s}
+.burger.open span:nth-child(1){transform:translateY(9px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}
+@media(max-width:960px){
+  .burger{display:block}
+  nav{position:absolute;top:70px;left:0;right:0;background:var(--dark);max-height:0;overflow:hidden;transition:max-height .4s}
+  nav.open{max-height:520px}
+  nav ul{flex-direction:column;padding:16px 0 24px;gap:14px}
+}
+
+/* ========== 4. HERO ========== */
+.hero{min-height:100vh;display:flex;align-items:center;padding:110px 0 60px;color:#fff;
+  background:
+   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath d='M40 4l9 22 22-9-9 22 22 9-22 9 9 22-22-9-9 22-9-22-22 9 9-22-22-9 22-9-9-22 22 9z' fill='none' stroke='%23c9a24b' stroke-opacity='.18'/%3E%3C/svg%3E"),
+   linear-gradient(135deg,var(--dark),#0a5a40)}
+.hero .container{display:grid;gap:40px;align-items:center}
+.hero h1{color:#fff;font-size:clamp(2rem,5vw,3.3rem);margin-bottom:18px}
+.hero p{max-width:520px;margin-bottom:28px;opacity:.92}
+.hero .btns{display:flex;gap:14px;flex-wrap:wrap}
+.ph{border-radius:22px;border:2px dashed rgba(201,162,75,.6);background:rgba(255,255,255,.07);min-height:260px;display:grid;place-items:center;text-align:center;padding:20px;color:#e8dcae}
+.ph img{width:100%;height:100%;object-fit:cover;border-radius:20px}
+@media(min-width:900px){.hero .container{grid-template-columns:1.1fr .9fr}.ph{min-height:420px}}
+
+/* ========== 5. СТАТИСТИКА ========== */
+.stats{padding:0;margin-top:-50px;position:relative;z-index:2}
+.stats .grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.stat{text-align:center;border-top:4px solid var(--gold)}
+.stat strong{display:block;font-family:'Noto Serif',serif;font-size:2.2rem;color:var(--emerald)}
+.stat span{font-size:.95rem}
+
+/* ========== 6. ИНСТИТУТ ЖӨНҮНДӨ ========== */
+.about .container{display:grid;gap:40px;align-items:center}
+.about .ph{background:var(--mint);color:var(--emerald);border-color:var(--emerald);min-height:320px}
+.about h2{margin-bottom:14px}
+.checks{margin-top:18px;display:grid;gap:10px}
+.checks li::before{content:"✓";display:inline-grid;place-items:center;width:26px;height:26px;margin-right:10px;border-radius:50%;background:var(--emerald);color:#fff;font-size:.85rem}
+@media(min-width:900px){.about .container{grid-template-columns:1fr 1fr}}
+
+/* ========== 7. TIMELINE ========== */
+.programme{background:var(--mint)}
+.timeline{position:relative;max-width:820px;margin:auto}
+.timeline::before{content:"";position:absolute;left:20px;top:0;bottom:0;width:3px;background:var(--gold)}
+.t-item{position:relative;margin:0 0 26px 58px}
+.t-item::before{content:attr(data-y);position:absolute;left:-58px;top:0;width:42px;height:42px;border-radius:50%;background:var(--dark);color:var(--gold);display:grid;place-items:center;font-weight:700;border:3px solid var(--gold)}
+.t-item li{padding:4px 0 4px 18px;position:relative}
+.t-item li::before{content:"•";position:absolute;left:0;color:var(--gold)}
+@media(min-width:800px){
+  .timeline::before{left:50%;margin-left:-1px}
+  .t-item{width:calc(50% - 40px);margin:0 0 30px}
+  .t-item::before{left:auto;right:-61px}
+  .t-item:nth-child(even){margin-left:calc(50% + 40px)}
+  .t-item:nth-child(even)::before{right:auto;left:-61px}
+}
+
+/* ========== 8. КОШУМЧА ИЛИМДЕР / АРТЫКЧЫЛЫКТАР ========== */
+.subjects .grid,.why .grid{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.subjects .card{text-align:center}
+.subjects .ico{font-size:2.2rem;display:block;margin-bottom:8px;transition:.3s}
+.subjects .card:hover .ico{transform:scale(1.2) rotate(-6deg)}
+.subjects .card:hover{background:var(--dark);color:#fff}
+.subjects .card:hover h3{color:var(--gold)}
+.why{background:var(--dark)}
+.why .title,.why .sub{color:#fff}
+.why .card b{font-family:'Noto Serif',serif;font-size:1.8rem;color:var(--gold)}
+.why .card h3{margin:4px 0}
+
+/* ========== 9. КАБЫЛ АЛУУ + ДОКУМЕНТТЕР ========== */
+.steps{grid-template-columns:repeat(auto-fit,minmax(170px,1fr));counter-reset:s}
+.step{text-align:center;padding:22px 16px}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:44px;height:44px;margin:0 auto 10px;border-radius:50%;background:var(--emerald);color:#fff;font-weight:700}
+.notice{margin:30px auto 0;max-width:720px;background:#fff8e3;border-left:5px solid var(--gold);padding:16px 20px;border-radius:12px;font-weight:600}
+.docs{background:var(--mint)}
+.docs ul{max-width:640px;margin:auto;display:grid;gap:12px}
+.docs li{background:#fff;padding:14px 20px;border-radius:14px;box-shadow:var(--shadow)}
+
+/* ========== 10. ФОРМА ========== */
+.apply{background:linear-gradient(135deg,var(--dark),#0a5a40)}
+.apply .title{color:#fff}
+form{background:#fff;border-radius:22px;padding:30px;max-width:760px;margin:30px auto 0;display:grid;gap:16px}
+.row{display:grid;gap:16px}
+@media(min-width:700px){.row{grid-template-columns:1fr 1fr}}
+label{font-weight:600;font-size:.93rem;display:block;margin-bottom:4px}
+input,select,textarea{width:100%;padding:12px 14px;border:2px solid #cfdcd5;border-radius:12px;font:inherit;background:#fff}
+input:focus,select:focus,textarea:focus{border-color:var(--emerald);outline:none}
+.err{color:#b3261e;font-size:.83rem;min-height:1.1em;display:block}
+.bad{border-color:#b3261e}
+.check{display:flex;gap:10px;align-items:flex-start}
+.check input{width:20px;margin-top:4px}
+form .btn{border:0;background:var(--emerald);color:#fff;justify-self:start}
+form .btn:hover{background:var(--dark)}
+.success{display:none;background:#e3f6ec;color:#0d5a3a;border:2px solid var(--emerald);padding:16px;border-radius:12px;font-weight:700}
+
+/* ========== 11. FAQ ========== */
+.faq-list{max-width:760px;margin:auto;display:grid;gap:12px}
+.q{width:100%;text-align:left;background:#fff;border:0;padding:18px 22px;border-radius:14px;font:700 1rem 'Nunito Sans',sans-serif;color:var(--dark);cursor:pointer;box-shadow:var(--shadow);display:flex;justify-content:space-between;gap:12px}
+.q::after{content:"+";color:var(--gold);font-size:1.4rem;line-height:1;transition:.3s}
+.q[aria-expanded=true]::after{transform:rotate(45deg)}
+.a{max-height:0;overflow:hidden;transition:max-height .35s;padding:0 22px}
+.a p{padding:14px 0 4px}
+
+/* ========== 12. БАЙЛАНЫШ + FOOTER ========== */
+.contact{background:var(--mint)}
+.contact .container{display:grid;gap:30px}
+.contact li{padding:8px 0}
+.social{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.social a{background:var(--dark);color:#fff;padding:8px 16px;border-radius:30px;font-size:.9rem}
+.social a:hover{background:var(--gold);color:var(--dark)}
+iframe{width:100%;height:300px;border:0;border-radius:18px;background:#d9e6df}
+@media(min-width:900px){.contact .container{grid-template-columns:1fr 1fr}}
+footer{background:var(--dark);color:#d9e6df;padding:44px 0 20px;text-align:center}
+footer b{font-family:'Noto Serif',serif;color:var(--gold);font-size:1.3rem}
+footer ul{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;margin:18px 0}
+footer .social{justify-content:center}
+footer .social a{background:rgba(255,255,255,.1)}
+footer small{display:block;margin-top:24px;border-top:1px solid rgba(255,255,255,.15);padding-top:16px}
+#top{position:fixed;right:18px;bottom:18px;width:46px;height:46px;border-radius:50%;border:0;background:var(--gold);color:var(--dark);font-size:1.3rem;cursor:pointer;opacity:0;pointer-events:none;transition:.3s;z-index:40}
+#top.show{opacity:1;pointer-events:auto}
+
+/* ========== 13. SCROLL REVEAL ========== */
+.reveal{opacity:0;transform:translateY(24px);transition:.7s}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER / НАВИГАЦИЯ ========== -->
+<header id="header">
+  <div class="container nav">
+    <a href="#home" class="logo"><b>УММУ МУХАММАД</b><small>4 жылдык Куран жаттатуу институту</small></a>
+    <button class="burger" id="burger" aria-label="Менюну ачуу" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav id="menu" aria-label="Башкы меню">
+      <ul>
+        <li><a href="#home">Башкы бет</a></li>
+        <li><a href="#about">Институт жөнүндө</a></li>
+        <li><a href="#programme">Окуу программасы</a></li>
+        <li><a href="#why">Артыкчылыктары</a></li>
+        <li><a href="#admission">Кабыл алуу</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Байланыш</a></li>
+        <li><a href="#apply" class="btn btn-gold">Кабыл алууга арыз берүү</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ========== HERO ========== -->
+<section class="hero" id="home">
+  <div class="container">
+    <div>
+      <h1>Куранды жатта — илим менен келечегиңди кур</h1>
+      <p>Умму Мухаммад — 4 жылдык Куран жаттатуу жана кошумча илимдерди терең үйрөтүүчү билим берүү институту.</p>
+      <div class="btns">
+        <a href="#apply" class="btn btn-gold">Кабыл алууга арыз берүү</a>
+        <a href="#programme" class="btn btn-line">Окуу программасын көрүү</a>
+      </div>
+    </div>
+    <!-- Сүрөт: images/hero.jpg файлын коюп, төмөнкү сапты <img src="images/hero.jpg" alt="Куран жана мечит"> менен алмаштырыңыз -->
+    <div class="ph" role="img" aria-label="Hero сүрөтү үчүн орун">Куран • мечит • окуп жаткан студенттер<br>(hero.jpg үчүн орун)</div>
+  </div>
+</section>
+
+<!-- ========== СТАТИСТИКА ========== -->
+<section class="stats">
+  <div class="container grid">
+    <div class="card stat reveal"><strong><span data-count="4">0</span> жыл</strong><span>Куран жаттоо программасы</span></div>
+    <div class="card stat reveal"><strong>Куран</strong><span>Хифз программасы</span></div>
+    <div class="card stat reveal"><strong>Кошумча илимдер</strong><span>Ар тараптуу билим</span></div>
+    <div class="card stat reveal"><strong>Тарбия</strong><span>Адеп-ахлак жана жоопкерчилик</span></div>
+  </div>
+</section>
+
+<!-- ========== ИНСТИТУТ ЖӨНҮНДӨ ========== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="ph reveal" role="img" aria-label="Институт сүрөтү">about.jpg үчүн орун</div>
+    <div class="reveal">
+      <h2>Умму Мухаммад институту жөнүндө</h2>
+      <p>Умму Мухаммад — окуучуларга Куранды жаттатуу менен бирге кошумча илимдерди үйрөтүүгө, тарбияга, адеп-ахлакка жана жоопкерчиликке өзгөчө көңүл бурган 4 жылдык билим берүү мекемеси.</p>
+      <ul class="checks">
+        <li>Куран жаттоо</li><li>Туура тажвид үйрөнүү</li><li>Кошумча илимдер</li>
+        <li>Адеп-ахлактык тарбия</li><li>Тартип жана жоопкерчилик</li><li>Устаздар менен үзгүлтүксүз сабак</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 4 ЖЫЛДЫК ПРОГРАММА (TIMELINE) ========== -->
+<section class="programme" id="programme">
+  <div class="container">
+    <h2 class="title">4 жылдык окуу программасы</h2>
+    <p class="sub">Ар бир жыл мурунку жылдын билимин бекемдеп, Куранды толук жаттоого жетелейт.</p>
+    <div class="timeline">
+      <div class="card t-item reveal" data-y="1"><h3>1-жыл</h3><ul><li>Куран окуунун негиздери</li><li>Тажвид</li><li>Куран жаттоого киришүү</li><li>Араб тилинин негиздери</li></ul></div>
+      <div class="card t-item reveal" data-y="2"><h3>2-жыл</h3><ul><li>Куран жаттоону улантуу</li><li>Тажвидди тереңдетүү</li><li>Араб тили</li><li>Исламий билимдер</li></ul></div>
+      <div class="card t-item reveal" data-y="3"><h3>3-жыл</h3><ul><li>Хифз программасын улантуу</li><li>Куранды бекемдөө</li><li>Кошумча илимдер</li><li>Тарбиялык сабактар</li></ul></div>
+      <div class="card t-item reveal" data-y="4"><h3>4-жыл</h3><ul><li>Куранды толук жаттоо</li><li>Хифзди бекемдөө</li><li>Кайталоо жана тапшыруу</li><li>Жыйынтыктоочу даярдык</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== КОШУМЧА ИЛИМДЕР ========== -->
+<section class="subjects">
+  <div class="container">
+    <h2 class="title">Куран менен бирге — кошумча билим</h2>
+    <div class="grid" style="margin-top:36px">
+      <div class="card reveal"><span class="ico">📖</span><h3>Куран жана Тажвид</h3></div>
+      <div class="card reveal"><span class="ico">🕌</span><h3>Исламий билимдер</h3></div>
+      <div class="card reveal"><span class="ico">🌐</span><h3>Араб тили</h3></div>
+      <div class="card reveal"><span class="ico">📚</span><h3>Жалпы билим берүү сабактары</h3></div>
+      <div class="card reveal"><span class="ico">🧠</span><h3>Тарбия жана адеп-ахлак</h3></div>
+      <div class="card reveal"><span class="ico">💻</span><h3>Заманбап билимдер</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ЭМНЕ ҮЧҮН УММУ МУХАММАД? ========== -->
+<section class="why" id="why">
+  <div class="container">
+    <h2 class="title">Эмне үчүн Умму Мухаммад?</h2>
+    <div class="grid" style="margin-top:36px">
+      <div class="card reveal"><b>01</b><h3>4 жылдык программа</h3><p>Куран жаттоого багытталган системалуу окуу.</p></div>
+      <div class="card reveal"><b>02</b><h3>Тажрыйбалуу устаздар</h3><p>Окуучулар менен үзгүлтүксүз иш алып баруу.</p></div>
+      <div class="card reveal"><b>03</b><h3>Кошумча илимдер</h3><p>Куран менен бирге башка билимдерди да алуу мүмкүнчүлүгү.</p></div>
+      <div class="card reveal"><b>04</b><h3>Тартип жана тарбия</h3><p>Окуучунун адеби жана жоопкерчилигине көңүл буруу.</p></div>
+      <div class="card reveal"><b>05</b><h3>Ыңгайлуу окуу чөйрөсү</h3><p>Билим алууга ылайыктуу шарттар.</p></div>
+      <div class="card reveal"><b>06</b><h3>Жеке көзөмөл</h3><p>Окуучунун жетишкендигин көзөмөлдөө.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== КАБЫЛ АЛУУ ШАРТТАРЫ ========== -->
+<section id="admission">
+  <div class="container">
+    <h2 class="title">Кабыл алуу шарттары</h2>
+    <!-- Кадамдарды өзгөртүү үчүн script.js ичиндеги ADMISSION массивин оңдоңуз -->
+    <div class="grid steps" id="steps" style="margin-top:36px"></div>
+    <p class="notice">Кабыл алуу даталары жана талаптары администрация тарабынан жарыяланат.</p>
+  </div>
+</section>
+
+<!-- ========== ДОКУМЕНТТЕР ========== -->
+<section class="docs">
+  <div class="container">
+    <h2 class="title">Кабыл алуу үчүн керектүү документтер</h2>
+    <!-- Документтерди өзгөртүү үчүн DOCUMENTS массивин оңдоңуз -->
+    <ul id="docs" style="margin-top:36px"></ul>
+  </div>
+</section>
+
+<!-- ========== ОНЛАЙН ФОРМА ========== -->
+<section class="apply" id="apply">
+  <div class="container">
+    <h2 class="title">Окууга кабыл алууга арыз бериңиз</h2>
+    <form id="form" novalidate>
+      <div class="row">
+        <div><label for="name">Аты-жөнү</label><input id="name" required autocomplete="name"><span class="err"></span></div>
+        <div><label for="year">Туулган жылы</label><input id="year" type="number" min="1950" max="2026" required><span class="err"></span></div>
+      </div>
+      <div class="row">
+        <div><label for="phone">Телефон номери</label><input id="phone" type="tel" placeholder="+996 700 123 456" required autocomplete="tel"><span class="err"></span></div>
+        <div><label for="city">Шаар/район</label><input id="city" required><span class="err"></span></div>
+      </div>
+      <div class="row">
+        <div><label for="edu">Учурдагы билими</label>
+          <select id="edu" required><option value="">Тандаңыз</option><option>Орто мектеп (толук эмес)</option><option>Орто мектеп</option><option>Колледж/лицей</option><option>Жогорку билим</option></select><span class="err"></span></div>
+        <div><label for="level">Куран окуу деңгээли</label>
+          <select id="level" required><option value="">Тандаңыз</option><option>Окуй албайм</option><option>Араб арибин таанайм</option><option>Жаттап окуйм</option><option>Жакшы окуйм</option></select><span class="err"></span></div>
+      </div>
+      <div><label for="surahs">Курандан канча сүрө жаттаган</label><input id="surahs" type="number" min="0" max="114" required><span class="err"></span></div>
+      <div><label for="why-us">Эмне үчүн биздин институтта окууну каалайсыз?</label><textarea id="why-us" rows="3" required></textarea><span class="err"></span></div>
+      <div><label for="extra">Кошумча маалымат</label><textarea id="extra" rows="2"></textarea></div>
+      <div><div class="check"><input type="checkbox" id="agree"><label for="agree">Мен киргизген маалыматтарымдын туура экенин ырастайм.</label></div><span class="err"></span></div>
+      <p class="success" id="success" role="status">Арыз ийгиликтүү кабыл алынды! Жакын арада сиз менен байланышабыз.</p>
+      <button type="submit" class="btn">Арызды жөнөтүү</button>
+    </form>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section id="faq">
+  <div class="container">
+    <h2 class="title">Көп берилүүчү суроолор</h2>
+    <!-- Суроо-жоопторду FAQ массивинен өзгөртүңүз -->
+    <div class="faq-list" id="faq-list" style="margin-top:36px"></div>
+  </div>
+</section>
+
+<!-- ========== БАЙЛАНЫШ ========== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div>
+      <h2 style="margin-bottom:14px">Биз менен байланышыңыз</h2>
+      <ul>
+        <li>📍 Дарек: [Даректи бул жерге жазыңыз]</li>
+        <li>📞 Телефон: [Телефон номерин жазыңыз]</li>
+        <li>📱 WhatsApp: [WhatsApp номер]</li>
+        <li>✉️ Email: [Email]</li>
+      </ul>
+      <div class="social"><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="Telegram">Telegram</a><a href="#" aria-label="WhatsApp">WhatsApp</a></div>
+    </div>
+    <!-- Google Maps: src ордуна өз картаңыздын embed шилтемесин коюңуз -->
+    <iframe title="Институттун картадагы орду" loading="lazy" src="about:blank"></iframe>
+  </div>
+</section>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="container">
+    <b>УММУ МУХАММАД</b><p>4 жылдык Куран жаттатуу институту</p>
+    <ul><li><a href="#home">Башкы бет</a></li><li><a href="#about">Институт жөнүндө</a></li><li><a href="#programme">Окуу программасы</a></li><li><a href="#admission">Кабыл алуу</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Байланыш</a></li></ul>
+    <div class="social"><a href="#">Instagram</a><a href="#">Telegram</a><a href="#">WhatsApp</a></div>
+    <small>© 2026 Умму Мухаммад. Бардык укуктар корголгон.</small>
+  </div>
+</footer>
+<button id="top" aria-label="Жогору чыгуу">↑</button>
+
+<script>
+/* ========== МААЛЫМАТТАР (ушул жерден оңой өзгөртүлөт) ========== */
+const ADMISSION = ["Арыз тапшыруу","Маектешүү","Кирүү сынагы","Документтерди тапшыруу","Окууга кабыл алуу"];
+const DOCUMENTS = ["📄 Паспорт/туулгандыгы тууралуу күбөлүк","📄 Билими тууралуу документ","📄 3x4 сүрөт","📄 Ата-эне/камкорчунун маалыматы","📄 Башка талап кылынган документтер"];
+const FAQ = [
+  ["Окуу мөөнөтү канча жыл?","4 жылдык программа."],
+  ["Кимдер кабыл алынат?","Бул маалымат администрациянын талаптарына ылайык жарыяланат."],
+  ["Куранды толук билүү талап кылынабы?","Бул жооп администрация тарабынан жаңыртылат."],
+  ["Кошумча сабактар барбы?","Ооба, институттун окуу программасында Куран жаттоодон тышкары кошумча илим сабактары да каралган."],
+  ["Кабыл алуу үчүн кантип арыз берсе болот?","Сайттагы онлайн форма аркылуу арыз калтырууга болот."]
+];
+const $ = s => document.querySelector(s);
+
+/* Маалыматтарды баракка чыгаруу */
+$('#steps').innerHTML = ADMISSION.map(t => `<div class="card step reveal"><b>${t}</b></div>`).join('');
+$('#docs').innerHTML = DOCUMENTS.map(t => `<li class="reveal">${t}</li>`).join('');
+$('#faq-list').innerHTML = FAQ.map(([q,a],i) =>
+  `<div><button class="q" aria-expanded="false" aria-controls="a${i}">${q}</button><div class="a" id="a${i}" role="region"><p>${a}</p></div></div>`).join('');
+
+/* Mobile hamburger menu */
+const burger = $('#burger'), menu = $('#menu');
+burger.onclick = () => {
+  const open = menu.classList.toggle('open');
+  burger.classList.toggle('open', open);
+  burger.setAttribute('aria-expanded', open);
+};
+menu.querySelectorAll('a').forEach(a => a.onclick = () => { menu.classList.remove('open'); burger.classList.remove('open'); burger.setAttribute('aria-expanded', false); });
+
+/* Navbar scroll effect, back-to-top, active link */
+const links = [...menu.querySelectorAll('a[href^="#"]:not(.btn)')];
+const secs = links.map(a => $(a.getAttribute('href')));
+function onScroll(){
+  const y = scrollY;
+  $('#header').classList.toggle('scrolled', y > 40);
+  $('#top').classList.toggle('show', y > 500);
+  let cur = 0;
+  secs.forEach((s,i) => { if (s && s.offsetTop - 120 <= y) cur = i; });
+  links.forEach((a,i) => a.classList.toggle('active', i === cur));
+}
+addEventListener('scroll', onScroll); onScroll();
+$('#top').onclick = () => scrollTo({top:0, behavior:'smooth'});
+
+/* Scroll reveal + animated counter */
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  e.target.classList.add('in'); io.unobserve(e.target);
+  const c = e.target.querySelector('[data-count]');
+  if (c) { const end = +c.dataset.count; let n = 0;
+    const t = setInterval(() => { c.textContent = ++n; if (n >= end) clearInterval(t); }, 300); }
+}), {threshold:.15});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+/* FAQ accordion */
+document.querySelectorAll('.q').forEach(b => b.onclick = () => {
+  const panel = $('#' + b.getAttribute('aria-controls')), open = b.getAttribute('aria-expanded') === 'true';
+  document.querySelectorAll('.q').forEach(o => { o.setAttribute('aria-expanded', false); $('#' + o.getAttribute('aria-controls')).style.maxHeight = 0; });
+  if (!open) { b.setAttribute('aria-expanded', true); panel.style.maxHeight = panel.scrollHeight + 'px'; }
+});
+
+/* Form validation (front-end demo, backend жок) */
+const form = $('#form');
+const phoneOk = v => /^\+?[0-9\s\-()]{9,16}$/.test(v.trim()) && v.replace(/\D/g,'').length >= 9;
+function setErr(el, msg){
+  const box = el.type === 'checkbox' ? el.closest('div').parentElement.querySelector('.err') : el.parentElement.querySelector('.err');
+  box.textContent = msg; el.classList.toggle('bad', !!msg);
+}
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  let ok = true;
+  form.querySelectorAll('[required]').forEach(el => {
+    let msg = '';
+    if (!el.value.trim()) msg = 'Бул талааны толтуруңуз';
+    else if (el.id === 'phone' && !phoneOk(el.value)) msg = 'Телефон номерин туура жазыңыз (мис: +996 700 123 456)';
+    else if (el.id === 'year' && (el.value < 1950 || el.value > 2026)) msg = 'Туулган жылын туура жазыңыз';
+    else if (el.id === 'surahs' && (el.value < 0 || el.value > 114)) msg = 'Сүрөнүн саны 0дөн 114кө чейин';
+    setErr(el, msg); if (msg) ok = false;
+  });
+  const ag = $('#agree'); setErr(ag, ag.checked ? '' : 'Маалыматтын тууралыгын ырастаңыз'); if (!ag.checked) ok = false;
+  if (!ok) { form.querySelector('.bad')?.focus(); return; }
+  /* Ийгиликтүү жөнөтүлдү: билдирүү көрсөтүп, форманы тазалоо */
+  form.reset();
+  const s = $('#success'); s.style.display = 'block'; s.scrollIntoView({behavior:'smooth', block:'center'});
+  setTimeout(() => s.style.display = 'none', 8000);
+});
+</script>
+</body>
+</html>
